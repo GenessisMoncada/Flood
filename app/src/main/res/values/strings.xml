@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Flood Warning</string>
+    <string name="ingrese_rio">Nombre del río</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="telefono">Teléfono</string>
+    <string name="boton_siguiente">Accesar datos</string>
+    <string name="ingrese_datos">Ingrese datos</string>
+    <string name="confirme_datos">Confirmación de datos</string>
+    <string name="nombre_rio">Nombre del río:</string>
+    <string name="numero_telefono">Número de teléfono:</string>
+    <string name="boton_confirmar">Confirmar datos</string>
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_confirmation2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#FFFFFF"
+    tools:context="ve.ucab.flood.Confirmation2Activity">
+
+    <LinearLayout
+        android:id="@+id/area_bienvenido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/texto_bienvenido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirme_datos"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/letra_bienvenido"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/area_icono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/area_bienvenido"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="80dp">
+
+        <ImageView
+            android:id="@+id/imagen_conletras"
+            android:layout_width="236dp"
+            android:layout_height="177dp"
+            android:src="@drawable/icono_y_letras_naranja"
+            android:layout_gravity="center"
+            tools:ignore="ContentDescription"
+            />
+
+        <TextView
+            android:id="@+id/mostrarRio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre_rio"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/tvRioIngresado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/letra_bienvenido"
+            android:layout_gravity="center"
+
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/area_confirmacion_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/area_icono"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="250dp"
+            >
+
+            <TextView
+                android:id="@+id/mostrarTelefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/numero_telefono"
+                android:ems="10"
+                android:textSize="18sp"
+                android:layout_marginTop="80dp"
+                />
+            <TextView
+                android:id="@+id/tvTelefonoIngresado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/letra_bienvenido"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+    <!-- Bottom Bar -->
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/boton_siguiente"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="@string/boton_confirmar"
+            android:textStyle="bold"
+            android:textSize="@dimen/letra_botones"
+            android:textColor="#FFFFFF"
+
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
